@@ -1,7 +1,9 @@
 # Using Playwright to test Mojolicious applications
 
   In this repo you can find a few examples for how to use [Playwright](https://playwright.dev) to test the sample
-  [Mojolicious](https://mojolicious.org) WebSocket applications `chat.pl`.
+  [Mojolicious](https://mojolicious.org) WebSocket application `chat.pl`. Tests are written in a mix of Perl and
+  JavaScript. Thanks to [Node Tap](https://node-tap.org) you can run them all with `prove` at the same time. Even in
+  parallel with `-j 3`!
 
 ## How to run?
 
