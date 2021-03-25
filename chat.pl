@@ -4,6 +4,7 @@ use Mojo::EventEmitter;
 helper events => sub { state $events = Mojo::EventEmitter->new };
 
 app->config(titles => {dashboard => 'Welcome', chat => 'Chat'});
+app->log->level('warn');
 
 get '/' => {template => 'index'};
 
