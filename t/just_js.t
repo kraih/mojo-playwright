@@ -15,6 +15,7 @@ async function test () {
   const firstTitle = await page.innerText('title')
   tap.equal(firstTitle, 'Welcome')
   await page.click('text=Chat')
+
   tap.equal(page.url(), url + '/chat')
   const secondTitle = await page.innerText('title')
   tap.equal(secondTitle, 'Chat')
