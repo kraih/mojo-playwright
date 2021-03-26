@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-const starter = require('@mojolicious/server-starter');
 const t = require('tap');
+const starter = require('@mojolicious/server-starter');
 const { chromium } = require('playwright');
 
 t.test('Test the WebSocket chat', async t => {
