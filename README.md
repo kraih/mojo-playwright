@@ -1,4 +1,4 @@
-# Using Playwright to test Mojolicious applications
+# Using Playwright to test Mojolicious applications [![](https://github.com/kraih/mojo-playwright/workflows/linux/badge.svg)](https://github.com/kraih/mojo-playwright/actions)
 
   In this repo you can find a few examples for how to use [Playwright](https://playwright.dev) to test the sample
   [Mojolicious](https://mojolicious.org) WebSocket application `chat.pl`. Tests are written in a mix of Perl and
