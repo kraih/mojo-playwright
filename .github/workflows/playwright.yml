@@ -1,4 +1,4 @@
-name: linux
+name: playwright
 on:
   push:
     branches:
@@ -7,17 +7,11 @@ on:
       - '*'
   pull_request:
 jobs:
-  perl:
+  perl-and-node:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        perl-version:
-          - '5.30'
-          - '5.32'
-    container:
-      image: perl:${{ matrix.perl-version }}
     steps:
       - uses: actions/checkout@v2
+      - uses: shogo82148/actions-setup-perl@v1
       - uses: actions/setup-node@v1
       - uses: microsoft/playwright-github-action@v1
       - name: npm install
