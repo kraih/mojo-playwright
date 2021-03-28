@@ -1,4 +1,4 @@
-# Using Playwright to test Mojolicious applications [![](https://github.com/kraih/mojo-playwright/workflows/linux/badge.svg)](https://github.com/kraih/mojo-playwright/actions)
+# Playwright and Mojolicious [![](https://github.com/kraih/mojo-playwright/workflows/linux/badge.svg)](https://github.com/kraih/mojo-playwright/actions)
 
   This is a companion repo to my blog post
   [Playwright and Mojolicious](https://dev.to/kraih/playwright-and-mojolicious-21hn). Here can find a few examples for
