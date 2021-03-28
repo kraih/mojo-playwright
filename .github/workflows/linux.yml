@@ -1,0 +1,32 @@
+name: linux
+on:
+  push:
+    branches:
+      - '*'
+    tags-ignore:
+      - '*'
+  pull_request:
+jobs:
+  perl:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        perl-version:
+          - '5.30'
+          - '5.32'
+    container:
+      image: perl:${{ matrix.perl-version }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - uses: microsoft/playwright-github-action@v1
+      - name: npm install
+        run: npm i
+      - name: perl -V
+        run: perl -V
+      - name: Fix ExtUtils::MakeMaker (for Perl 5.16 and 5.18)
+        run: cpanm -n App::cpanminus ExtUtils::MakeMaker
+      - name: Install dependencies
+        run: cpanm -n --installdeps .
+      - name: Run tests
+        run: prove -l t/*.t
