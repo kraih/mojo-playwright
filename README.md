@@ -1,9 +1,10 @@
 # Using Playwright to test Mojolicious applications [![](https://github.com/kraih/mojo-playwright/workflows/linux/badge.svg)](https://github.com/kraih/mojo-playwright/actions)
 
-  In this repo you can find a few examples for how to use [Playwright](https://playwright.dev) to test the sample
-  [Mojolicious](https://mojolicious.org) WebSocket application `chat.pl`. Tests are written in a mix of Perl and
-  JavaScript. Thanks to [Node Tap](https://node-tap.org) you can run them all with `prove` at the same time. Even in
-  parallel with `-j 3`!
+  This is a companion repo to my blog post
+  [Playwright and Mojolicious](https://dev.to/kraih/playwright-and-mojolicious-21hn). Here can find a few examples for
+  how to use [Playwright](https://playwright.dev) to test the sample [Mojolicious](https://mojolicious.org) WebSocket
+  application `chat.pl`. Tests are written in a mix of Perl and JavaScript. Thanks to [Node Tap](https://node-tap.org)
+  you can run them all with `prove` at the same time. Even in parallel with `-j 3`!
 
 ## How to run?
 
