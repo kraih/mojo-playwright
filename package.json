@@ -1,7 +1,8 @@
 {
+  "type": "module",
   "dependencies": {
-    "@mojolicious/server-starter": "^1.0.1",
-    "playwright": "^1.9.2",
-    "tap": "^14.11.0"
+    "@mojolicious/server-starter": "^2.0.0",
+    "playwright": "^1.17.1",
+    "tap": "^15.1.0"
   }
 }

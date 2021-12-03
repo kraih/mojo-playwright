@@ -23,4 +23,4 @@ jobs:
       - name: Install dependencies
         run: cpanm -n --installdeps .
       - name: Run tests
-        run: prove -l t/*.t
+        run: prove -l t/*.t t/*.t.js

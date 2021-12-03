@@ -12,10 +12,10 @@
     ...
     $ cpanm -n --installdeps .
     ...
-    $ prove t/*.t
-    t/just_js.t ..... ok   
-    t/just_perl.t ... ok   
-    t/wrapper_js.t .. ok   
+    $ prove t/*.t t/*/t.js
+    t/just_js.t.js ..... ok   
+    t/just_perl.t ...... ok   
+    t/wrapper_js.t.js .. ok   
     All tests successful.
     Files=3, Tests=12,  4 wallclock secs ( 0.02 usr  0.01 sys +  2.23 cusr  0.60 csys =  2.86 CPU)
     Result: PASS

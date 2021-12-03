@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-const t = require('tap');
-const starter = require('@mojolicious/server-starter');
-const { chromium } = require('playwright');
+import t from 'tap';
+import ServerStarter from '@mojolicious/server-starter';
+import { chromium } from 'playwright';
 
 t.test('Test the WebSocket chat', async t => {
-  const server = await starter.newServer();
+  const server = await ServerStarter.newServer();
   await server.launch('perl', ['t/wrappers/change_title.pl']);
   const browser = await chromium.launch();
   const context = await browser.newContext();
